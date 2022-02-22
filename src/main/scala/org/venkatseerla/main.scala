@@ -4,10 +4,10 @@ object main extends App {
 
     println("Args: ")
     args.map(x=>println(x))
-    reverseStatement("I am venkat")
+    reverseStatement("I am Venkat")
     literalsInSetOneButNotInSetTwo()
     dropWhileexecution()
-    elementsOfVectorFrom100to150
+    elementsOfVectorFrom100to150()
 
     //Let us assume two data structures to represent the following numerals: (1) 1, 3, 5, 10, 20 and (2) 20, 17, 18, 99, 0.
     // Write a Scala program to find the number literals that are in the first data structure, but not in the other one.
@@ -16,7 +16,7 @@ object main extends App {
     //Output:
     //Number literals in set one but not in set two = HashSet(5, 10, 1, 3)
     //Number literals in set two but not in set one = HashSet(0, 17, 18, 99)
-    def literalsInSetOneButNotInSetTwo()={
+    def literalsInSetOneButNotInSetTwo():Unit={
         val setOne = Set(1, 3, 5, 10, 20)
         val setTwo = Set(20, 17, 18, 99, 0)
 
@@ -34,7 +34,7 @@ object main extends App {
     //Output:
     //Starting from left to right, removing items that are factors of two, and will
     //stop execution on the first element that is not divisible by two: 19 20 25 50 100 10
-    def dropWhileexecution()={
+    def dropWhileexecution():Unit={
         val numberSeq = Seq(2, 8, 19, 20, 25, 50, 100, 10)
         val divByTwoF: (Int) => Boolean = (i) => i % 2 == 0
         println(
