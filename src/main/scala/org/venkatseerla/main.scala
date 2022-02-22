@@ -61,7 +61,7 @@ object main extends App {
     //Output:
     //Elements of Vector from 100 to 150, excluding the 150 number literal = 100, 110, 120, 130, 140
     //Sum for elements in the List = 600
-    def elementsOfVectorFrom100to150()={
+    def elementsOfVectorFrom100to150():Unit={
         val listRange = List.range(100, 150, 10)
         val listRangeAsStr = listRange.mkString(", ")
         println(s"Elements of List from 100 to 150, excluding the 150 number literal = $listRangeAsStr")
