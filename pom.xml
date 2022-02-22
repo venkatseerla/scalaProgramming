@@ -120,8 +120,8 @@
                         <arg>-Xcheckinit</arg>
                         <!-- Only supported in Scala 2.11 -->
                         <!--<arg>-Ywarn-unused-import</arg>-->
-                        <arg>-Ywarn-inaccessible</arg>
-                        <arg>-Ywarn-dead-code</arg>
+                        <!--<arg>-Ywarn-inaccessible</arg>-->
+                        <!-- <arg>-Ywarn-dead-code</arg>-->
                     </args>
                     <jvmArgs>
                         <jvmArg>-Xss64m</jvmArg>
